@@ -5,13 +5,13 @@ import HomeHeroIntro from './HomeHeroIntro';
 
 function HomeHeroSection() {
 	return (
-		<div className='home-hero-section'>
+		<section id='hero-section' arial-label='hero'>
 			<div className='flex justify-around items-center'>
 				<HomeHeroIntro />
 
-				<HomeHeroImage />
+				{/* <HomeHeroImage /> */}
 			</div>
-		</div>
+		</section>
 	);
 }
 

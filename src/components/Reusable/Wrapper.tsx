@@ -7,7 +7,7 @@ type WrapperProps = {
 
 function Wrapper({ id, children }: WrapperProps) {
 	return (
-		<div id={id} className='grid gap-4'>
+		<div id={id} className='grid gap-4 w-95 mx-auto'>
 			{children}
 		</div>
 	);

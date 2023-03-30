@@ -6,7 +6,14 @@
 
 /* Fonts */
 /* -------------------------------------- */
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;700&family=Merriweather:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+/* Color Variables */
+/* -------------------------------------- */
+:root {
+	--black: #1f2028;
+	--white: #fff;
+}
 
 /* Layout of Pages */
 /* -------------------------------------- */
@@ -17,18 +24,14 @@ body {
 	box-sizing: border-box;
 	height: 100%;
 	padding: 0.5rem;
-}
-
-/* #gatsby-focus-wrapper,
-#___gatsby, */
-/* body {
-	display: flex;
-	flex-direction: column;
+	background-color: var(--black);
+	color: var(--white);
 }
 
 main {
 	flex: 1 0 auto;
-} */
+}
+*/
 
 /*
   From Wesbos CSS Grid Course
@@ -39,4 +42,14 @@ main {
 *:before,
 *:after {
 	box-sizing: inherit;
+}
+
+#hero-section {
+	/* Sizing */
+	width: 100vw;
+	height: 100vh;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }

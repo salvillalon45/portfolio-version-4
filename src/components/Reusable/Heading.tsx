@@ -8,16 +8,17 @@ type HeadingProps = {
 
 function Heading({ value, type, style }: HeadingProps) {
 	let content = null;
+	let resultStyle = `${style}`;
 
 	switch (type) {
 		case 'h1':
-			content = <h1 className={style}>{value}</h1>;
+			content = <h1 className={resultStyle}>{value}</h1>;
 			break;
 		case 'h2':
-			content = <h2 className={style}>{value}</h2>;
+			content = <h2 className={resultStyle}>{value}</h2>;
 			break;
 		case 'h3':
-			content = <h3 className={style}>{value}</h3>;
+			content = <h3 className={resultStyle}>{value}</h3>;
 			break;
 	}
 

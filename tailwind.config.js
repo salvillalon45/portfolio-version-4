@@ -8,7 +8,11 @@ module.exports = {
 		extend: {
 			fontFamily: {
 				merriweather: ['Merriweather', 'serif'],
+				libre: ['Abhaya Libre', 'serif'],
 				poppins: ['Poppins', 'sans-serif']
+			},
+			width: {
+				95: '95%'
 			}
 		}
 	},
