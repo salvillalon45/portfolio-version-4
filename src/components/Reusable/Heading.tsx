@@ -12,13 +12,13 @@ function Heading({ value, type, style }: HeadingProps) {
 
 	switch (type) {
 		case 'h1':
-			content = <h1 className={resultStyle}>{value}</h1>;
+			content = <h1 className={`h1-heading ${resultStyle}`}>{value}</h1>;
 			break;
 		case 'h2':
-			content = <h2 className={resultStyle}>{value}</h2>;
+			content = <h2 className={`h2-heading ${resultStyle}`}>{value}</h2>;
 			break;
 		case 'h3':
-			content = <h3 className={resultStyle}>{value}</h3>;
+			content = <h3 className={`h3-heading ${resultStyle}`}>{value}</h3>;
 			break;
 	}
 
