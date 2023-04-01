@@ -1,12 +1,12 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 
 type TextProps = {
-	value: string;
+	children: ReactNode;
 	style?: string;
 };
 
-function Text({ style, value }: TextProps) {
-	return <p className={`font-poppins ${style}`}>{value}</p>;
+function Text({ style, children }: TextProps) {
+	return <p className={`font-poppins ${style}`}>{children}</p>;
 }
 
 export default Text;

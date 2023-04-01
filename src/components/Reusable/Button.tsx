@@ -1,12 +1,18 @@
-import React from 'react';
+import React, { ReactNode } from 'react';
 
 type ButtonProps = {
-	value: string;
-	style: string;
+	children: ReactNode;
+	style?: string;
 };
 
-function Button({ style, value }: ButtonProps) {
-	return <button className={style}>{value}</button>;
+function Button({ style, children }: ButtonProps) {
+	return (
+		<button
+			className={`font-poppins font-semibold w-32 p-4 text-black bg-white rounded-xl ${style}`}
+		>
+			{children}
+		</button>
+	);
 }
 
 export default Button;

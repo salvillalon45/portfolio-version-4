@@ -4,15 +4,18 @@ import DividerLine from '../Reusable/DividerLine';
 import AboutMeSection from './AboutMeSection/AboutMeSection';
 import HomeHeroSection from './HomeHeroSection/HomeHeroSection';
 import ExploreSection from './ExploreSection/ExploreSection';
+import ContactSection from './ContactSection/ContactSection';
 
 function HomePageContent() {
 	return (
 		<>
 			<HomeHeroSection />
-			<DividerLine />
+			<DividerLine style='mb-4' />
 			<AboutMeSection />
-			<DividerLine />
+			<DividerLine style='mt-12 mb-4' />
 			<ExploreSection />
+			<DividerLine style='mt-12 mb-4' />
+			<ContactSection />
 		</>
 	);
 }

@@ -1,7 +1,11 @@
 import React from 'react';
 
-function DividerLine() {
-	return <hr />;
+type DividerLineProps = {
+	style?: string;
+};
+
+function DividerLine({ style }: DividerLineProps) {
+	return <hr className={style} />;
 }
 
 export default DividerLine;

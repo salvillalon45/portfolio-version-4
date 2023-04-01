@@ -2,29 +2,31 @@ import React from 'react';
 import Button from '../../Reusable/Button';
 
 import Heading from '../../Reusable/Heading';
+import Text from '../../Reusable/Text';
 
 function ExploreSection() {
 	return (
-		<div className='explore-section w-4/6 grid gap-4'>
-			<Heading
-				type='h2'
-				value='Explore My Life!'
-				style='text-3xl font-bold font-merriweather'
-			/>
-			{/* <Heading
-				type='h3'
-				value='Navigate my site and learn about me!'
-				style='text-2xl font-bold font-merriweather'
-			/> */}
-			<div className='flex justify-evenly	'>
-				<Button style='p-4 rounded-2xl bg-yellow-400' value='About' />
-				<Button style='p-4 rounded-2xl bg-yellow-400' value='Project' />
-				<Button
-					style='p-4 rounded-2xl bg-yellow-400'
-					value='Experience'
-				/>
+		<section className='explore-section grid gap-8' arial-label='explore'>
+			<div>
+				<Heading
+					type='h2'
+					style='font-libre font-semibold leading-none'
+				>
+					Explore
+				</Heading>
+
+				<Text>
+					Navigate my site, by clicking on the links below! (I
+					recommend starting with the About Me)
+				</Text>
 			</div>
-		</div>
+
+			<div className='flex justify-evenly	'>
+				<Button>About Me</Button>
+				<Button>Project</Button>
+				<Button>Experience</Button>
+			</div>
+		</section>
 	);
 }
 

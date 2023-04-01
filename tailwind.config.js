@@ -6,6 +6,10 @@ module.exports = {
 	],
 	theme: {
 		extend: {
+			colors: {
+				white: '#fff',
+				black: '#1f2028'
+			},
 			fontFamily: {
 				merriweather: ['Merriweather', 'serif'],
 				libre: ['Abhaya Libre', 'serif'],

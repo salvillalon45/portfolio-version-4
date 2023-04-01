@@ -9,23 +9,39 @@ function AboutMeSection() {
 		<section
 			id='about-me-section'
 			arial-label='about-me'
-			className='flex justify-between'
+			className='flex justify-between items-center'
 		>
 			<div className='w-3/6 grid gap-4'>
 				<Heading
 					type='h2'
-					value='About Me'
-					style='font-libre font-semibold	leading-none'
-				/>
-				<Text value='<span>Glad</span> you made it to my site! This is the fourth version (lol)' />
-				<Text value='My name is Salvador Villalon Jr. Alot of people call me Sal (Feel free to call me that)' />
-				<Text value='At UC Irvine, I created my first WordPress (still used today!). With just one website, I created so much impact that I wanted to learn how websites were made! Thus began my passion for Computer Science and my goal of becoming a Software Engineer.' />
-				<Text value='Fast-forward to today, I am working at Accenture! I use Full Stack expertise, optimism, and agile learning to listen to the pain points of organizations and cooperate with my team to innovate digital experiences.' />
-				<Heading
-					type='h3'
-					value='Technologies'
-					style='font-libre font-semibold	leading-none'
-				/>
+					style='font-libre font-semibold leading-none'
+				>
+					About Me
+				</Heading>
+				<Text>
+					Glad you made it to my site! This is the fourth version
+					(lol)
+				</Text>
+				<Text>
+					My name is Salvador Villalon Jr. Alot of people call me Sal
+					(Feel free to call me that)
+				</Text>
+				<Text>
+					At UC Irvine, I created my first WordPress (still used
+					today!). With just one website, I created so much impact
+					that I wanted to learn how websites were made! Thus began my
+					passion for Computer Science and my goal of becoming a
+					Software Engineer.
+				</Text>
+				<Text>
+					Fast-forward to today, I am working at Accenture! I use Full
+					Stack expertise, optimism, and agile learning to listen to
+					the pain points of organizations and cooperate with my team
+					to innovate digital experiences.
+				</Text>
+				<Heading type='h3' style='font-libre font-semibold	leading-none'>
+					Technologies
+				</Heading>
 				<div className='flex justify-around'>
 					<ul className='list-disc'>
 						<li>HTML/CSS</li>
