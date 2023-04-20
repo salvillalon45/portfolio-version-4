@@ -6,9 +6,7 @@ import Layout from '../components/Layout';
 function AboutPage() {
 	return (
 		<Layout id={'aboutPageContainer'}>
-			{/* <LayoutSection> */}
 			<AboutPageContent />
-			{/* </LayoutSection> */}
 		</Layout>
 	);
 }
