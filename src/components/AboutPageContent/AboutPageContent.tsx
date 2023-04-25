@@ -5,6 +5,10 @@ import DividerLine from '../Reusable/DividerLine';
 import WelcomeSection from './WelcomeSection/WelcomeSection';
 import ANewWorldSection from './ANewWorldSection/ANewWorldSection';
 import FailureSection from './FailureSection/FailureSection';
+import ComeUpSection from './ComeUpSection/ComeUpSection';
+import IdeaSection from './IdeaSection/IdeaSection';
+import FoundItSection from './FoundItSection/FoundItSection';
+import FromHereAndOutSection from './FromHereAndOutSection/FromHereAndOutSection';
 
 function AboutPageContent() {
 	return (
@@ -21,6 +25,14 @@ function AboutPageContent() {
 			<ANewWorldSection />
 			<DividerLine style='mb-4' />
 			<FailureSection />
+			<DividerLine style='mb-4' />
+			<ComeUpSection />
+			<DividerLine style='mb-4' />
+			<IdeaSection />
+			<DividerLine style='mb-4' />
+			<FoundItSection />
+			<DividerLine style='mb-4' />
+			<FromHereAndOutSection />
 		</>
 	);
 }

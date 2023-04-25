@@ -2,10 +2,6 @@ import React from 'react';
 
 import Heading from '../../Reusable/Heading';
 import Text from '../../Reusable/Text';
-import UciPortal from '../../../images/about_me_page_images/acceptance_letter/uci_portal.jpg';
-import UciAcceptance from '../../../images/about_me_page_images/acceptance_letter/uci_acceptance.png';
-import Tennis1 from '../../../images/about_me_page_images/tennis_pics/tennis1.jpeg';
-import Tennis2 from '../../../images/about_me_page_images/tennis_pics/tennis2.jpg';
 
 function FailureSection() {
 	return (
