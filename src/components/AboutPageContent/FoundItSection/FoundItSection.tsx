@@ -11,7 +11,7 @@ function FoundItSection() {
 			</Heading>
 
 			<div className='grid gap-6 w-9/12 mx-auto'>
-				<Text>
+				<Text style='leading-10'>
 					I sat in the SLL office and realized a fact that lit up my
 					mind like a light bulb. By creating a simple website, I was
 					able to make an impact on an organization and prospective

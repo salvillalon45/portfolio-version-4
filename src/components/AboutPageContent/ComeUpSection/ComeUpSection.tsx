@@ -25,7 +25,7 @@ function ComeUpSection() {
 			</div>
 
 			<div className='grid gap-6 w-9/12 mx-auto'>
-				<Text>
+				<Text style='leading-10'>
 					My Sophomore year started and I was selected for the
 					Administrative Internship Program (AIP). I worked under the
 					amazing Sherwynn Umali. When I told other interns they all

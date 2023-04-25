@@ -21,15 +21,12 @@ function ANewWorldSection() {
 				</div>
 
 				<div className='grid gap-6 w-9/12 mx-auto'>
-					<Text>
+					<Text style='leading-10'>
 						When I enrolled at UC Irvine (UCI), I was
 						Undecided/Undeclared student pursuing Electrical
-						Engineering.
-					</Text>
-					<Text>
-						Being on campus felt like stepping into a new world. I
-						explored places like Chipotle and Yogurtland that were
-						not in my hometown!
+						Engineering. Being on campus felt like stepping into a
+						new world. I explored places like Chipotle and
+						Yogurtland that were not in my hometown!
 					</Text>
 				</div>
 			</div>
@@ -47,7 +44,7 @@ function ANewWorldSection() {
 				</div>
 
 				<div className='grid gap-6 w-9/12 mx-auto'>
-					<Text>
+					<Text style='leading-10'>
 						There were so many extracurricular activities to choose
 						from! I played tennis in high school and wanted to
 						continue playing! I thought I could play for the NCAA
@@ -57,16 +54,19 @@ function ANewWorldSection() {
 						training to improve my tennis game, I joined the Rowing
 						Intramural Club to become a better tennis player!
 					</Text>
-					<Text>
+					<Text style='leading-10'>
 						I was also involved in several organizations, including
 						Circle K, the Society of Hispanic Professional Engineers
 						at UCI (SHPE-UCI), and the Student Retention & Outreach
 						Center (SOAR). In addition, I worked as a busboy,
 						dishwasher, and cook at the Lot 5 Eatery in Mesa Court.
 					</Text>
-					<Text>
-						All this happened in my first year. All of these
-						activities added up to a crucial moment in my life.
+					<Text style='leading-10'>
+						All this happened in my first year.{' '}
+						<b>
+							All of these activities added up to a crucial moment
+							in my life.
+						</b>
 					</Text>
 				</div>
 			</div>
