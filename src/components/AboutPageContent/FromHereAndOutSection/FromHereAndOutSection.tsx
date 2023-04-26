@@ -11,6 +11,7 @@ import BoardMembers from '../../../images/about_me_page_images/from_here_and_out
 import GroupTrophy from '../../../images/about_me_page_images/from_here_and_out/shpe/group_trophy.jpg';
 import Sitting from '../../../images/about_me_page_images/from_here_and_out/grad/sitting.jpg';
 import Squat from '../../../images/about_me_page_images/from_here_and_out/grad/squat.jpg';
+import TextLink from '../../Reusable/TextLink';
 
 function FromHereAndOutSection() {
 	return (
@@ -21,7 +22,7 @@ function FromHereAndOutSection() {
 
 			<div className='grid gap-20'>
 				<div className='grid gap-6 w-9/12 mx-auto'>
-					<Text>
+					<Text style='leading-10'>
 						WordPress did the whole work for you! I wanted to learn
 						the process behind making websites using code. I
 						discovered a Codecademy course called "Build Websites
@@ -31,12 +32,19 @@ function FromHereAndOutSection() {
 						got involved in organizations such as:
 					</Text>
 
-					<Text>
-						✅ Management Leadership for Tomorrow. I was a Career
-						Prep fellow and graduated in the top 5% of my class.
+					<Text style='leading-10'>
+						✅{' '}
+						<TextLink
+							style='underline hover:text-grey'
+							href='https://mlt.org/'
+						>
+							Management Leadership for Tomorrow
+						</TextLink>
+						. I was a Career Prep fellow and graduated in the top 5%
+						of my class.
 					</Text>
 
-					<Text>
+					<Text style='leading-10'>
 						✅ Society of Hispanic Professional Engineers
 						(SHPE-UCI). SHPE-UCI was a big part of my college
 						experience. I became a general member, then secretary,
@@ -48,7 +56,7 @@ function FromHereAndOutSection() {
 						the first time in SHPE-UCI history.
 					</Text>
 
-					<Text>
+					<Text style='leading-10'>
 						✅ I completed 6 Software Engineering internships at S&P
 						Dow Jones Indices, UCI Student Life and Leadership, JP
 						Morgan Chase & Co, Vusar, Dreams For Schools, and

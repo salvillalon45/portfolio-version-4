@@ -5,6 +5,7 @@ import Text from '../../Reusable/Text';
 
 import Steve from '../../../images/about_me_page_images/aip/steve.jpg';
 import KarateKid from '../../../images/about_me_page_images/aip/karate_kid.gif';
+import TextLink from '../../Reusable/TextLink';
 
 function IdeaSection() {
 	return (
@@ -34,13 +35,15 @@ function IdeaSection() {
 				<Text style='leading-10'>
 					After multiple attempts and errors, I finally completed the
 					website!{' '}
-					<a
+					<TextLink
 						href='https://adminintern.studentlife.uci.edu/'
-						target='_blank'
+						style='underline hover:text-grey'
 					>
-						Also, the website is still functional and in use today.
-						Take a look!
-					</a>
+						<b>
+							Also, the website is still functional and in use
+							today. Take a look!
+						</b>
+					</TextLink>
 				</Text>
 			</div>
 

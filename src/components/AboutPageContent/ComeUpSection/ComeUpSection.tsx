@@ -5,6 +5,7 @@ import Text from '../../Reusable/Text';
 
 import AIP1 from '../../../images/about_me_page_images/aip/aip_intern_team.jpg';
 import AIP2 from '../../../images/about_me_page_images/aip/aip_solo.jpg';
+import TextLink from '../../Reusable/TextLink';
 
 function ComeUpSection() {
 	return (
@@ -31,10 +32,16 @@ function ComeUpSection() {
 					amazing Sherwynn Umali. When I told other interns they all
 					gasped in jealousy because she was famous all over UCI and
 					everyone loved her. I had no idea! (Working with her was
-					amazing. I made a tribute page. Check it out!). To succeed
-					in Computer Science, you need to gain technical experience,
-					but the projects assigned for my internship were not
-					technical!
+					amazing that I made a{' '}
+					<TextLink
+						href='https://salvillalon45.github.io/freecodecamp-sherwynnTributepage'
+						style='underline hover:text-grey'
+					>
+						<b>tribute page</b>
+					</TextLink>{' '}
+					). To succeed in Computer Science, you need to gain
+					technical experience, but the projects assigned for my
+					internship were not technical!
 				</Text>
 			</div>
 		</section>

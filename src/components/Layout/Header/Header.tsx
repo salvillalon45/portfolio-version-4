@@ -10,7 +10,9 @@ function Header() {
 
 			<nav className='nav-bar'>
 				<ul className='flex list-none gap-4 font-poppins'>
-					<li>Home</li>
+					<li>
+						<Link to='/'>Home</Link>
+					</li>
 					<li>
 						<Link to='/about/'>About</Link>
 					</li>

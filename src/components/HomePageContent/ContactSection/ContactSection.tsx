@@ -40,8 +40,6 @@ function ContactSection() {
 							<i className='bi bi-envelope mx-4 text-2xl'></i>
 							<Text>Email me for a chat!</Text>
 						</a>
-
-						<p></p>
 					</div>
 				</div>
 			</div>

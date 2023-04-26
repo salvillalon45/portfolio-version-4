@@ -2,6 +2,7 @@ import React from 'react';
 
 import Heading from '../../Reusable/Heading';
 import Text from '../../Reusable/Text';
+import TextLink from '../../Reusable/TextLink';
 
 function FailureSection() {
 	return (
@@ -14,11 +15,23 @@ function FailureSection() {
 				<Text style='leading-10'>
 					I invested too much time in extracurricular activities and
 					forgot my main reason for enrolling in college, to graduate
-					with a degree. That Winter quarter 2016 I failed Physics 2
+					with a degree. That Winter quarter 2016 I failed{' '}
+					<TextLink
+						style='underline hover:text-grey'
+						href='https://catalogue.uci.edu/allcourses/physics/'
+					>
+						<b>Physics 2</b>
+					</TextLink>
 					(I got a 3/16 on the final. You need a 12/16 to pass) and
-					Math 2B. <b>I was put on Academic Probation</b>. I thought
-					“I just got into UC Irvine and I am already going to get
-					kicked out!”
+					Math 2B. I was put on{' '}
+					<TextLink
+						style='underline hover:text-grey'
+						href='https://catalogue.uci.edu/informationforadmittedstudents/academicregulationsandprocedures/#:~:text=An%20undergraduate%20student%20normally%20is,average%2C%20is%20less%20than%202.0.'
+					>
+						<b>Academic Probation</b>
+					</TextLink>
+					. I thought “I just got into UC Irvine and I am already
+					going to get kicked out!”
 				</Text>
 
 				<Text style='leading-10'>

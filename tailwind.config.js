@@ -8,7 +8,8 @@ module.exports = {
 		extend: {
 			colors: {
 				white: '#fff',
-				black: '#1f2028'
+				black: '#1f2028',
+				grey: '#bfbfbf'
 			},
 			fontFamily: {
 				merriweather: ['Merriweather', 'serif'],

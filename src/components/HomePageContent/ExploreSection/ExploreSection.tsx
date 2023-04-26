@@ -3,6 +3,7 @@ import Button from '../../Reusable/Button';
 
 import Heading from '../../Reusable/Heading';
 import Text from '../../Reusable/Text';
+import { navigate } from 'gatsby';
 
 function ExploreSection() {
 	return (
@@ -22,9 +23,15 @@ function ExploreSection() {
 			</div>
 
 			<div className='flex justify-evenly	'>
-				<Button>About Me</Button>
-				<Button>Project</Button>
-				<Button>Experience</Button>
+				<Button buttonAction={() => navigate(`/about`)}>
+					About Me
+				</Button>
+				<Button buttonAction={() => navigate(`/projects`)}>
+					Project
+				</Button>
+				<Button buttonAction={() => navigate(`/experience/`)}>
+					Experience
+				</Button>
 			</div>
 		</section>
 	);
