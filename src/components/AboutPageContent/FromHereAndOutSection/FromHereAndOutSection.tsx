@@ -20,55 +20,84 @@ function FromHereAndOutSection() {
 				From Here and Out
 			</Heading>
 
-			<div className='grid gap-20'>
-				<div className='grid gap-6 w-9/12 mx-auto'>
-					<Text style='leading-10'>
-						WordPress did the whole work for you! I wanted to learn
-						the process behind making websites using code. I
-						discovered a Codecademy course called "Build Websites
-						from Scratch" and took it during the summer of 2017.
-						Then I set goals and invested my time in priorities that
-						would bring me closer to becoming a Software Engineer. I
-						got involved in organizations such as:
-					</Text>
+			<div className='grid gap-6 w-9/12 mx-auto mb-4'>
+				<Text style='leading-10'>
+					WordPress did the whole work for you! I wanted to learn the
+					process behind making websites using code. I discovered a
+					Codecademy course called "Build Websites from Scratch" and
+					took it during the summer of 2017. Then I set goals and
+					invested my time in priorities that would bring me closer to
+					becoming a Software Engineer. I got involved in
+					organizations such as:
+				</Text>
 
-					<Text style='leading-10'>
-						✅{' '}
-						<TextLink
-							style='underline hover:text-grey'
-							href='https://mlt.org/'
-						>
-							Management Leadership for Tomorrow
-						</TextLink>
-						. I was a Career Prep fellow and graduated in the top 5%
-						of my class.
-					</Text>
+				<Text style='leading-10'>
+					✅{' '}
+					<TextLink href='https://mlt.org/'>
+						<b>Management Leadership for Tomorrow</b>
+					</TextLink>
+					. I was a Career Prep fellow and graduated in the top 5% of
+					my class.
+				</Text>
 
-					<Text style='leading-10'>
-						✅ Society of Hispanic Professional Engineers
-						(SHPE-UCI). SHPE-UCI was a big part of my college
-						experience. I became a general member, then secretary,
-						then External Vice President, then President (Being
-						president was one of the best things I have ever done!).
-						During the year I served as President, SHPE-UCI received
-						13 awards and won the coveted National Medium Chapter of
-						the Year award, beating 245 chapters across the U.S. for
-						the first time in SHPE-UCI history.
-					</Text>
+				<Text style='leading-10'>
+					✅
+					<TextLink href='https://shpe.eng.uci.edu/'>
+						<b>
+							Society of Hispanic Professional Engineers
+							(SHPE-UCI)
+						</b>
+						.
+					</TextLink>{' '}
+					SHPE-UCI was a big part of my college experience. I became a
+					general member, then secretary, then External Vice
+					President, then{' '}
+					<TextLink href='https://www.instagram.com/p/ByOYjwChEeh/'>
+						President
+					</TextLink>{' '}
+					(Being president was one of the best things I have ever
+					done!). During the year I served as President, SHPE-UCI{' '}
+					<TextLink href='https://drive.google.com/drive/folders/1dBPkwtO-IarsUDfwPUrhO1YxY1aORIq6?usp=sharing'>
+						received 13 awards
+					</TextLink>{' '}
+					and won the coveted{' '}
+					<TextLink href='https://engineering.uci.edu/news/2019/11/uci-chapter-hispanic-engineers-earns-national-recognition'>
+						National Medium Chapter of the Year award
+					</TextLink>
+					, beating 245 chapters across the U.S. for the first time in
+					SHPE-UCI history.
+				</Text>
 
-					<Text style='leading-10'>
-						✅ I completed 6 Software Engineering internships at S&P
-						Dow Jones Indices, UCI Student Life and Leadership, JP
-						Morgan Chase & Co, Vusar, Dreams For Schools, and
-						FinityOne.
-					</Text>
+				<Text style='leading-10'>
+					✅ I completed <b>6 Software Engineering internships</b> at{' '}
+					<TextLink href='https://www.spglobal.com/spdji/en/'>
+						S&P Dow Jones Indices
+					</TextLink>
+					,{' '}
+					<TextLink href='https://studentlife.uci.edu/home.php'>
+						UCI Student Life and Leadership
+					</TextLink>
+					,{' '}
+					<TextLink href='https://www.jpmorganchase.com/'>
+						JP Morgan Chase & Co
+					</TextLink>
+					, <TextLink href='https://www.vusar.co/'>Vusar</TextLink>,{' '}
+					<TextLink href='https://www.dreamsforschools.org/'>
+						Dreams For Schools
+					</TextLink>
+					, and{' '}
+					<TextLink href='https://www.linkedin.com/company/finityone/'>
+						FinityOne
+					</TextLink>
+					.
+				</Text>
 
-					<Text>Pictures of my adventures!</Text>
-				</div>
-
+				<Text>Pictures of my adventures!</Text>
+			</div>
+			<div className='grid gap-12'>
 				{/* New York */}
 				<div className='grid gap-4'>
-					<div className='flex gap-8 justify-center'>
+					<div className='flex gap-8 justify-center about-pic-container'>
 						<img className='w-1/4' src={NYSolo} alt='' />
 						<img className='w-2/5' src={NYGroup} alt='' />
 					</div>
@@ -80,7 +109,7 @@ function FromHereAndOutSection() {
 
 				{/* Chicago */}
 				<div className='grid gap-4'>
-					<div className='flex gap-8 justify-center'>
+					<div className='flex gap-8 justify-center about-pic-container'>
 						<img className='w-1/4' src={ChicagoSolo} alt='' />
 						<img className='w-2/5' src={ChicagoGroup} alt='' />
 					</div>
@@ -92,7 +121,7 @@ function FromHereAndOutSection() {
 
 				{/* SHPE */}
 				<div className='grid gap-4'>
-					<div className='flex gap-8 justify-center'>
+					<div className='flex gap-8 justify-center about-pic-container'>
 						<img className='w-2/5' src={GroupTrophy} alt='' />
 						<img className='w-45' src={BoardMembers} alt='' />
 					</div>
@@ -104,8 +133,8 @@ function FromHereAndOutSection() {
 				</div>
 
 				{/* Grad */}
-				<div className='grid gap-4'>
-					<div className='flex gap-8 justify-center'>
+				<div className='grid gap-4 about-pic-wrapper'>
+					<div className='flex gap-8 justify-center about-pic-container'>
 						<img className='w-1/4' src={Squat} alt='' />
 						<img className='w-1/4' src={Sitting} alt='' />
 					</div>

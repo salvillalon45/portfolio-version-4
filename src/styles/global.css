@@ -19,8 +19,6 @@
 /* -------------------------------------- */
 html,
 body {
-	/* #gatsby-focus-wrapper, */
-	/* #___gatsby */
 	box-sizing: border-box;
 	height: 100%;
 	padding: 0.5rem;
@@ -31,7 +29,6 @@ body {
 main {
 	flex: 1 0 auto;
 }
-*/
 
 /*
   From Wesbos CSS Grid Course
@@ -81,4 +78,15 @@ hr {
 
 .h3-heading {
 	font-size: clamp(25px, 6vw, 45px);
+}
+
+@media only screen and (max-width: 769px) {
+	.about-pic-container {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.about-pic-container img {
+		width: 80%;
+	}
 }

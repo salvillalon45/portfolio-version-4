@@ -8,7 +8,7 @@ type TextLinkProps = {
 };
 
 function TextLink({
-	style,
+	style = 'underline hover:text-grey',
 	children,
 	href,
 	isTargetBlank = true

@@ -15,7 +15,7 @@ function ANewWorldSection() {
 			</Heading>
 
 			<div className='grid gap-12'>
-				<div className='flex gap-8 justify-center'>
+				<div className='flex gap-8 justify-center about-pic-container'>
 					<img className='w-2/5' src={UciPortal} alt='' />
 					<img className='w-2/5' src={UciAcceptance} alt='' />
 				</div>
@@ -33,7 +33,7 @@ function ANewWorldSection() {
 
 			<div className='grid gap-12'>
 				<div className='grid gap-4'>
-					<div className='flex gap-8 justify-center'>
+					<div className='flex gap-8 justify-center about-pic-container'>
 						<img className='w-2/5' src={Tennis1} alt='' />
 						<img className='w-2/5' src={Tennis2} alt='' />
 					</div>

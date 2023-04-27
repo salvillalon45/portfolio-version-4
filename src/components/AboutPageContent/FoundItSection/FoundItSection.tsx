@@ -13,9 +13,12 @@ function FoundItSection() {
 			<div className='grid gap-6 w-9/12 mx-auto'>
 				<Text style='leading-10'>
 					I sat in the SLL office and realized a fact that lit up my
-					mind like a light bulb. By creating a simple website, I was
-					able to make an impact on an organization and prospective
-					students. I revitalized the brand for an organization! Also,
+					mind like a light bulb.{' '}
+					<b>
+						By creating a simple website, I was made an impact on an
+						organization and prospective students
+					</b>
+					. I revitalized the brand for an organization! Also,
 					prospectives students can now learn about this internship
 					opportunity with its new online presence. Now everyone can
 					share the website and learn about it! At that moment, my

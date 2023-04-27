@@ -15,7 +15,7 @@ function ComeUpSection() {
 			</Heading>
 
 			<div className='grid gap-4'>
-				<div className='flex gap-8 justify-center'>
+				<div className='flex gap-8 justify-center about-pic-container'>
 					<img className='w-1/2' src={AIP1} alt='' />
 					<img className='w-2/5' src={AIP2} alt='' />
 				</div>
@@ -33,10 +33,7 @@ function ComeUpSection() {
 					gasped in jealousy because she was famous all over UCI and
 					everyone loved her. I had no idea! (Working with her was
 					amazing that I made a{' '}
-					<TextLink
-						href='https://salvillalon45.github.io/freecodecamp-sherwynnTributepage'
-						style='underline hover:text-grey'
-					>
+					<TextLink href='https://salvillalon45.github.io/freecodecamp-sherwynnTributepage'>
 						<b>tribute page</b>
 					</TextLink>{' '}
 					). To succeed in Computer Science, you need to gain

@@ -48,7 +48,7 @@ function IdeaSection() {
 			</div>
 
 			<div className='grid gap-4'>
-				<div className='flex gap-8 justify-center items-center'>
+				<div className='flex gap-8 justify-center items-center about-pic-container'>
 					<img className='h-2/4' src={KarateKid} alt='' />
 					<img className='w-1/4' src={Steve} alt='' />
 				</div>
