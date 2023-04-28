@@ -11,7 +11,7 @@ function WelcomeSection() {
 				Welcome
 			</Heading>
 
-			<div className='flex gap-4'>
+			<div className='flex gap-4  w-9/12 mx-auto'>
 				<div>
 					<img src={WelcomePicture} />
 				</div>

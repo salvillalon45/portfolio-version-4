@@ -16,11 +16,13 @@ import TextLink from '../../Reusable/TextLink';
 function FromHereAndOutSection() {
 	return (
 		<section id='from-here-and-out-section' className='grid gap-4'>
-			<Heading type='h3' style='font-libre font-semibold leading-none'>
-				From Here and Out
-			</Heading>
-
 			<div className='grid gap-6 w-9/12 mx-auto mb-4'>
+				<Heading
+					type='h3'
+					style='font-libre font-semibold leading-none'
+				>
+					From Here and Out
+				</Heading>
 				<Text style='leading-10'>
 					WordPress did the whole work for you! I wanted to learn the
 					process behind making websites using code. I discovered a
@@ -94,10 +96,11 @@ function FromHereAndOutSection() {
 
 				<Text>Pictures of my adventures!</Text>
 			</div>
+
 			<div className='grid gap-12'>
 				{/* New York */}
-				<div className='grid gap-4'>
-					<div className='flex gap-8 justify-center about-pic-container'>
+				<div className='grid gap-4 about-page-pic-wrapper'>
+					<div className='flex gap-8 justify-center'>
 						<img className='w-1/4' src={NYSolo} alt='' />
 						<img className='w-2/5' src={NYGroup} alt='' />
 					</div>
@@ -108,8 +111,8 @@ function FromHereAndOutSection() {
 				</div>
 
 				{/* Chicago */}
-				<div className='grid gap-4'>
-					<div className='flex gap-8 justify-center about-pic-container'>
+				<div className='grid gap-4 about-page-pic-wrapper'>
+					<div className='flex gap-8 justify-center'>
 						<img className='w-1/4' src={ChicagoSolo} alt='' />
 						<img className='w-2/5' src={ChicagoGroup} alt='' />
 					</div>
@@ -120,8 +123,8 @@ function FromHereAndOutSection() {
 				</div>
 
 				{/* SHPE */}
-				<div className='grid gap-4'>
-					<div className='flex gap-8 justify-center about-pic-container'>
+				<div className='grid gap-4 about-page-pic-wrapper'>
+					<div className='flex gap-8 justify-center'>
 						<img className='w-2/5' src={GroupTrophy} alt='' />
 						<img className='w-45' src={BoardMembers} alt='' />
 					</div>
@@ -133,8 +136,8 @@ function FromHereAndOutSection() {
 				</div>
 
 				{/* Grad */}
-				<div className='grid gap-4 about-pic-wrapper'>
-					<div className='flex gap-8 justify-center about-pic-container'>
+				<div className='grid gap-4 about-page-pic-wrapper'>
+					<div className='flex gap-8 justify-center'>
 						<img className='w-1/4' src={Squat} alt='' />
 						<img className='w-1/4' src={Sitting} alt='' />
 					</div>

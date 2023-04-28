@@ -7,11 +7,13 @@ import TextLink from '../../Reusable/TextLink';
 function FailureSection() {
 	return (
 		<section id='failure-section' className='grid gap-4'>
-			<Heading type='h3' style='font-libre font-semibold leading-none'>
-				Failure
-			</Heading>
-
 			<div className='grid gap-6 w-9/12 mx-auto'>
+				<Heading
+					type='h3'
+					style='font-libre font-semibold leading-none'
+				>
+					Failure
+				</Heading>
 				<Text style='leading-10'>
 					I invested too much time in extracurricular activities and
 					forgot my main reason for enrolling in college, to graduate

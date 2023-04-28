@@ -10,11 +10,13 @@ import TextLink from '../../Reusable/TextLink';
 function IdeaSection() {
 	return (
 		<section id='the-idea-section' className='grid gap-4'>
-			<Heading type='h3' style='font-libre font-semibold leading-none'>
-				The Idea
-			</Heading>
-
 			<div className='grid gap-6 w-9/12 mx-auto'>
+				<Heading
+					type='h3'
+					style='font-libre font-semibold leading-none'
+				>
+					The Idea
+				</Heading>
 				<Text style='leading-10'>
 					I noticed that the AIP website was old. It had pictures from
 					two years ago. Also, it was not a standalone website. AIP
@@ -47,8 +49,8 @@ function IdeaSection() {
 				</Text>
 			</div>
 
-			<div className='grid gap-4'>
-				<div className='flex gap-8 justify-center items-center about-pic-container'>
+			<div className='grid gap-4 about-page-pic-wrapper'>
+				<div className='flex gap-8 justify-center items-center'>
 					<img className='h-2/4' src={KarateKid} alt='' />
 					<img className='w-1/4' src={Steve} alt='' />
 				</div>

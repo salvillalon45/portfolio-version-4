@@ -81,12 +81,16 @@ hr {
 }
 
 @media only screen and (max-width: 769px) {
-	.about-pic-container {
+	.about-page-pic-wrapper div {
 		flex-direction: column;
 		align-items: center;
 	}
 
-	.about-pic-container img {
+	.about-page-pic-wrapper img {
 		width: 80%;
+	}
+
+	.about-page-pic-wrapper p {
+		text-align: center;
 	}
 }

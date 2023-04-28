@@ -9,15 +9,23 @@ import Tennis2 from '../../../images/about_me_page_images/tennis_pics/tennis2.jp
 
 function ANewWorldSection() {
 	return (
-		<section id='a-new-world-section' className='grid gap-20'>
-			<Heading type='h3' style='font-libre font-semibold leading-none'>
+		<section id='a-new-world-section' className='grid gap-8'>
+			<Heading
+				type='h3'
+				style='font-libre font-semibold leading-none w-10/12 mx-auto'
+			>
 				It’s a whole new world!
 			</Heading>
 
-			<div className='grid gap-12'>
-				<div className='flex gap-8 justify-center about-pic-container'>
-					<img className='w-2/5' src={UciPortal} alt='' />
-					<img className='w-2/5' src={UciAcceptance} alt='' />
+			<div className='grid gap-10'>
+				<div className='grid gap-4 about-page-pic-wrapper'>
+					<div className='flex gap-8 justify-center'>
+						<img className='w-2/5' src={UciPortal} alt='' />
+						<img className='w-2/5' src={UciAcceptance} alt='' />
+					</div>
+					<Text style='justify-self-center'>
+						My UCI Acceptance letter back in 2015
+					</Text>
 				</div>
 
 				<div className='grid gap-6 w-9/12 mx-auto'>
@@ -31,9 +39,9 @@ function ANewWorldSection() {
 				</div>
 			</div>
 
-			<div className='grid gap-12'>
-				<div className='grid gap-4'>
-					<div className='flex gap-8 justify-center about-pic-container'>
+			<div className='grid gap-10'>
+				<div className='grid gap-4 about-page-pic-wrapper'>
+					<div className='flex gap-8 justify-center'>
 						<img className='w-2/5' src={Tennis1} alt='' />
 						<img className='w-2/5' src={Tennis2} alt='' />
 					</div>

@@ -9,6 +9,7 @@ import ComeUpSection from './ComeUpSection/ComeUpSection';
 import IdeaSection from './IdeaSection/IdeaSection';
 import FoundItSection from './FoundItSection/FoundItSection';
 import FromHereAndOutSection from './FromHereAndOutSection/FromHereAndOutSection';
+import ValuesSection from './Values/ValuesSection';
 
 function AboutPageContent() {
 	return (
@@ -20,22 +21,35 @@ function AboutPageContent() {
 				About Me
 			</Heading>
 			<DividerLine style='mb-12 mt-4' />
+
 			<WelcomeSection />
 			<DividerLine style='mb-12 mt-12' />
-			<Heading type='h2' style='font-libre font-semibold leading-none'>
+
+			<Heading
+				type='h2'
+				style='font-libre font-semibold leading-none mb-9'
+			>
 				How I got to where I am
 			</Heading>
 			<ANewWorldSection />
+
 			<DividerLine style='mb-12 mt-12' />
 			<FailureSection />
+
 			<DividerLine style='mb-12 mt-12' />
 			<ComeUpSection />
+
 			<DividerLine style='mb-12 mt-12' />
 			<IdeaSection />
+
 			<DividerLine style='mb-12 mt-12' />
 			<FoundItSection />
+
 			<DividerLine style='mb-12 mt-12' />
 			<FromHereAndOutSection />
+
+			<DividerLine style='mb-12 mt-12' />
+			<ValuesSection />
 		</>
 	);
 }

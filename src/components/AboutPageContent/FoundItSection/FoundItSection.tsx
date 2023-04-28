@@ -6,11 +6,13 @@ import Text from '../../Reusable/Text';
 function FoundItSection() {
 	return (
 		<section id='found-it-section' className='grid gap-4'>
-			<Heading type='h3' style='font-libre font-semibold leading-none'>
-				I Found It!
-			</Heading>
-
 			<div className='grid gap-6 w-9/12 mx-auto'>
+				<Heading
+					type='h3'
+					style='font-libre font-semibold leading-none'
+				>
+					I Found It!
+				</Heading>
 				<Text style='leading-10'>
 					I sat in the SLL office and realized a fact that lit up my
 					mind like a light bulb.{' '}
