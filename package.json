@@ -1,43 +1,45 @@
 {
-  "name": "salvador-villalon-jr-portfolio",
-  "version": "1.0.0",
-  "private": true,
-  "description": "salvador-villalon-jr-portfolio",
-  "author": "Salvador Villalon",
-  "keywords": [
-    "gatsby"
-  ],
-  "scripts": {
-    "develop": "gatsby develop",
-    "start": "gatsby develop",
-    "build": "gatsby build",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@mdx-js/react": "^2.3.0",
-    "bootstrap-icons": "^1.10.3",
-    "gatsby": "^5.7.0",
-    "gatsby-plugin-google-gtag": "^5.7.0",
-    "gatsby-plugin-image": "^3.7.0",
-    "gatsby-plugin-manifest": "^5.7.0",
-    "gatsby-plugin-mdx": "^5.7.0",
-    "gatsby-plugin-sharp": "^5.7.0",
-    "gatsby-plugin-sitemap": "^6.7.0",
-    "gatsby-source-filesystem": "^5.7.0",
-    "gatsby-transformer-sharp": "^5.7.0",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
-  },
-  "devDependencies": {
-    "@types/node": "^18.15.0",
-    "@types/react": "^18.0.28",
-    "@types/react-dom": "^18.0.11",
-    "autoprefixer": "^10.4.14",
-    "gatsby-plugin-postcss": "^6.7.0",
-    "postcss": "^8.4.21",
-    "tailwindcss": "^3.2.7",
-    "typescript": "^4.9.5"
-  }
+	"name": "salvador-villalon-jr-portfolio",
+	"version": "1.0.0",
+	"private": true,
+	"description": "salvador-villalon-jr-portfolio",
+	"author": "Salvador Villalon",
+	"keywords": [
+		"gatsby"
+	],
+	"scripts": {
+		"develop": "gatsby develop",
+		"start": "gatsby develop",
+		"build": "gatsby build",
+		"serve": "gatsby serve",
+		"clean": "gatsby clean",
+		"typecheck": "tsc --noEmit"
+	},
+	"dependencies": {
+		"@mdx-js/react": "^2.3.0",
+		"bootstrap": "^5.2.3",
+		"bootstrap-icons": "^1.10.3",
+		"gatsby": "^5.7.0",
+		"gatsby-plugin-google-gtag": "^5.7.0",
+		"gatsby-plugin-image": "^3.7.0",
+		"gatsby-plugin-manifest": "^5.7.0",
+		"gatsby-plugin-mdx": "^5.7.0",
+		"gatsby-plugin-sharp": "^5.7.0",
+		"gatsby-plugin-sitemap": "^6.7.0",
+		"gatsby-source-filesystem": "^5.7.0",
+		"gatsby-transformer-sharp": "^5.7.0",
+		"react": "^18.2.0",
+		"react-bootstrap": "^2.7.4",
+		"react-dom": "^18.2.0"
+	},
+	"devDependencies": {
+		"@types/node": "^18.15.0",
+		"@types/react": "^18.0.28",
+		"@types/react-dom": "^18.0.11",
+		"autoprefixer": "^10.4.14",
+		"gatsby-plugin-postcss": "^6.7.0",
+		"postcss": "^8.4.21",
+		"tailwindcss": "^3.2.7",
+		"typescript": "^4.9.5"
+	}
 }

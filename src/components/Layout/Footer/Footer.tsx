@@ -2,8 +2,6 @@ import React from 'react';
 
 import Text from '../../Reusable/Text';
 
-// import {  } from 'bootstrap-icons';
-
 function Footer() {
 	return (
 		<footer id='footerContainer' className='flex justify-between mb-4'>
