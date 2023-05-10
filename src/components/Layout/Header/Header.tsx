@@ -17,7 +17,9 @@ function Header() {
 						<Link to='/about/'>About</Link>
 					</li>
 					<li>Projects</li>
-					<li>Experience</li>
+					<li>
+						<Link to='/experience/'>Experience</Link>
+					</li>
 				</ul>
 			</nav>
 		</header>
