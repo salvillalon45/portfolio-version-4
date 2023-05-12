@@ -59,7 +59,8 @@ const fullTimeExperienceData = [
 		date: 'Sep 2016 - Jun 2017',
 		org_link: 'https://studentlife.uci.edu/home.php',
 		description:
-			'My first internship. Here I found a passion for Computer Science by building a WordPress site'
+			'My first internship. Here I found a passion for Computer Science by building a WordPress site',
+		skills: 'Content Management Systems (CMS), Adobe Illustrator, WordPress, Presentation Development, Public Speaking'
 	}
 ];
 

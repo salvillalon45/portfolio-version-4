@@ -1,10 +1,15 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import Heading from '../Reusable/Heading';
 import DividerLine from '../Reusable/DividerLine';
 import FullTimeExperienceSection from './FullTimeExperienceSection/FullTimeExperienceSection';
+import ExperienceMenu from './ExperienceMenu';
 
 function ExperiencePageContent() {
+	const [currentContent, setCurrentContent] = useState({
+		name: 'Currently Doing'
+	});
+
 	return (
 		<>
 			<Heading
@@ -14,8 +19,12 @@ function ExperiencePageContent() {
 				Experience
 			</Heading>
 			<DividerLine style='mb-12 mt-4' />
-
-			<FullTimeExperienceSection />
+			<ExperienceMenu
+				currentContent={currentContent}
+				setCurrentContent={setCurrentContent}
+			/>
+			<p>TEST {currentContent}</p>
+			{/* <FullTimeExperienceSection /> */}
 		</>
 	);
 }
