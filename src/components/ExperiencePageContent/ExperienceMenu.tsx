@@ -169,36 +169,29 @@ function classNames(...classes: any[]) {
 
 type ExperienceMenuProps = {
 	currentContent: { name: string };
-	setCurrentContent: ({ string }) => void;
+	setCurrentContent: ({ name: string, key: string }) => void;
 };
 
 const people = [
-	{ name: 'Currently Doing' },
-	{ name: 'Full - Time Experience' },
-	{ name: 'Internships' },
-	{ name: 'Teaching' },
-	{ name: 'Education' }
+	{ name: 'Currently Doing', key: 'currently_doing' },
+	{ name: 'Full-Time Experience', key: 'full_time' },
+	{ name: 'Internships', key: 'internships' },
+	{ name: 'Teaching', key: 'teaching' },
+	{ name: 'Education', key: 'education' }
 ];
 
-// type ExperienceMenuProps = {
-// 	currentContent: string;
-// 	setCurrentContent: (string) => void;
-// };
-
 export default function ExperienceMenu(props: ExperienceMenuProps) {
-	// const a = { name: 'currently_doing' };
-	console.log(people[0]);
+	const { currentContent, setCurrentContent } = props;
 	console.log(props.currentContent);
-	const [selected, setSelected] = useState(people[0]);
-	// const [selectedPers, setSelectedPers] = useState(props.currentContent);
-	const { currentContent } = props;
 
 	return (
-		<div className='fixed top-16 w-72'>
-			<Listbox value={selected} onChange={setSelected}>
+		<div className='top-16 w-48'>
+			<Listbox value={currentContent} onChange={setCurrentContent}>
 				<div className='relative mt-1'>
-					<Listbox.Button className='relative w-full cursor-default rounded-lg bg-white py-2 pl-3 pr-10 text-left shadow-md focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm'>
-						<span className='block truncate'>ello`</span>
+					<Listbox.Button className='relative w-full cursor-default rounded-lg bg-white py-2 pl-3 pr-10 text-left shadow-md focus:outline-none focus-visible:border-indigo-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-orange-300 sm:text-sm font-poppins font-semibold w-32 p-4 text-black bg-white rounded-xl'>
+						<span className='block truncate text-black'>
+							{currentContent.name}
+						</span>
 						<span className='pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2'>
 							<ChevronUpDownIcon
 								className='h-5 w-5 text-gray-400'

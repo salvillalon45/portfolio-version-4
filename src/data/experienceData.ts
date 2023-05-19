@@ -7,7 +7,10 @@ const fullTimeExperienceData = [
 		description:
 			'I am a Software Engineer who has worked for Code.org and a leading Social Media company. Now I am creating innovative full-stack applications at the U.S Government.',
 		skills: 'TypeScript/Flow, React.js, JavaScript, GraphQL, Relay, PHP'
-	},
+	}
+];
+
+const internshipExperienceData = [
 	{
 		role_title: 'Software Developer Intern',
 		organization: 'FinityOne',
@@ -64,4 +67,63 @@ const fullTimeExperienceData = [
 	}
 ];
 
-export { fullTimeExperienceData };
+const teachingExperienceData = [
+	{
+		role_title: 'Full-Stack Development Instructor',
+		organization: 'Fullstack Academy',
+		date: 'Apr 2023 - Present',
+		org_link: 'https://www.fullstackacademy.com/',
+		description:
+			'I am Full-Stack JavaScript Instructor teaching BootCamp students how to become Software Engineers. They will learn Frontend development HTML/CSS, JavaScript React/Redux. Backend Development: Node, ExpressJS, SQL. Computer Science: Data Structures & Algorithms',
+		skills: 'Teaching, Full-Stack Development, Presentations'
+	},
+	{
+		role_title: 'Web Development Instructor',
+		organization: 'Dreams for Schools',
+		date: 'Aug 2020 - Nov 2020',
+		org_link: 'https://www.dreamsforschools.org/',
+		description:
+			'I worked as a Web Development Instructor teaching 6th - 8th-grade students the fundamentals of Web Development using HTML & CSS.',
+		skills: 'Teaching, HTML, CSS, Presentations'
+	}
+];
+
+const currentlyDoingExperienceData = [
+	{
+		role_title: 'Advanced Application Engineering Senior Analyst',
+		organization: 'Accenture',
+		date: 'Feb 2021 - Present',
+		org_link: 'https://www.accenture.com/us-en',
+		description:
+			'I am a Software Engineer who has worked for Code.org and a leading Social Media company. Now I am creating innovative full-stack applications at the U.S Government.',
+		skills: 'TypeScript/Flow, React.js, JavaScript, GraphQL, Relay, PHP'
+	},
+	{
+		role_title: 'Full-Stack Development Instructor',
+		organization: 'Fullstack Academy',
+		date: 'Apr 2023 - Present',
+		org_link: 'https://www.fullstackacademy.com/',
+		description:
+			'I am Full-Stack JavaScript Instructor teaching BootCamp students how to become Software Engineers. They will learn Frontend development HTML/CSS, JavaScript React/Redux. Backend Development: Node, ExpressJS, SQL. Computer Science: Data Structures & Algorithms',
+		skills: 'Teaching, Full-Stack Development, Presentations'
+	}
+];
+
+const educationData = [
+	{
+		role_title: "Bachelor's of Science in Computer Science",
+		organization: 'University of California, Irvine',
+		date: 'Sept 2015 - Mar 2020',
+		org_link: 'https://uci.edu/',
+		description: '',
+		skills: ''
+	}
+];
+
+export {
+	fullTimeExperienceData,
+	internshipExperienceData,
+	teachingExperienceData,
+	currentlyDoingExperienceData,
+	educationData
+};

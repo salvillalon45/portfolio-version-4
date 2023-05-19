@@ -34,7 +34,11 @@ function ExperienceItem({
 			<Text>{description}</Text>
 
 			<Text>
-				<span className='text-grey'>Tech:</span> {skills}
+				{!!skills ? (
+					<>
+						<span className='text-grey'>Tech:</span> {skills}
+					</>
+				) : null}
 			</Text>
 		</div>
 	);
