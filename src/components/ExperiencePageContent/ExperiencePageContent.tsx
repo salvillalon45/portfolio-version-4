@@ -10,6 +10,7 @@ import ExperienceMenu from './ExperienceMenu';
 import TeachingSection from './TeachingSection/TeachingSection';
 import CurrentlyDoingSection from './CurrentlyDoingSection/CurrentlyDoingSection';
 import EducationSection from './EducationSection/EducationSection';
+import TextLink from '../Reusable/TextLink';
 
 function ExperiencePageContent() {
 	const [currentContent, setCurrentContent] = useState({
@@ -54,11 +55,22 @@ function ExperiencePageContent() {
 			<div className='grid gap-6'>
 				<Text>
 					If you want more detail on my experience, go to{' '}
-					<b>LinkedIn and GitHub</b>! Resume is shared when requested.
+					<b>
+						<TextLink href='https://www.linkedin.com/in/salvadorvillalon/'>
+							<i className='bi bi-linkedin'></i> LinkedIn
+						</TextLink>{' '}
+					</b>
+					and{' '}
+					<b>
+						<TextLink href='https://github.com/salvillalon45'>
+							<i className='bi bi-github'></i> GitHub
+						</TextLink>{' '}
+					</b>
+					. Resume is shared when requested.
 				</Text>
 
 				<div className='flex justify-evenly'>
-					<Button
+					{/* <Button
 						buttonAction={() =>
 							window.open(
 								'https://www.linkedin.com/in/salvadorvillalon/'
@@ -66,18 +78,18 @@ function ExperiencePageContent() {
 						}
 					>
 						LinkedIn
-					</Button>
+					</Button> */}
 					<ExperienceMenu
 						currentContent={currentContent}
 						setCurrentContent={setCurrentContent}
 					/>
-					<Button
+					{/* <Button
 						buttonAction={() =>
 							window.open('https://github.com/salvillalon45')
 						}
 					>
 						GitHub
-					</Button>
+					</Button> */}
 				</div>
 
 				<div className='mt-6'>{showExperienceContent()}</div>
