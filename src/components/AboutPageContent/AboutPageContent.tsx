@@ -27,7 +27,7 @@ function AboutPageContent() {
 
 			<Heading
 				type='h2'
-				style='font-libre font-semibold leading-none mb-9'
+				style='font-libre font-semibold leading-none mb-9 '
 			>
 				How I got to where I am
 			</Heading>

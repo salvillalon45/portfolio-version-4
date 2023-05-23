@@ -2,9 +2,7 @@ import React from 'react';
 
 import Heading from '../../Reusable/Heading';
 import Text from '../../Reusable/Text';
-import WelcomePicture from '../../../images/about_me_page_images/welcome/2.png';
 import WelcomeCarousel from './WelcomeCarousel/WelcomeCarousel';
-import Well from './WelcomeCarousel/Well';
 
 function WelcomeSection() {
 	return (
@@ -13,11 +11,8 @@ function WelcomeSection() {
 				Welcome
 			</Heading>
 
-			{/* <div className='flex gap-4 w-9/12 mx-auto'> */}
-			<div className='flex gap-4 mx-auto'>
-				{/* <img src={WelcomePicture} /> */}
-				{/* <WelcomeCarousel /> */}
-				<Well />
+			<div className='carousel-about-wrapper flex gap-4 mx-auto w-9/12 mt-4'>
+				<WelcomeCarousel />
 
 				<div className='grid gap-4'>
 					<Text style='leading-10'>

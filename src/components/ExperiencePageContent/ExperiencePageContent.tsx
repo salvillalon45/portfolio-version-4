@@ -70,26 +70,10 @@ function ExperiencePageContent() {
 				</Text>
 
 				<div className='flex justify-evenly'>
-					{/* <Button
-						buttonAction={() =>
-							window.open(
-								'https://www.linkedin.com/in/salvadorvillalon/'
-							)
-						}
-					>
-						LinkedIn
-					</Button> */}
 					<ExperienceMenu
 						currentContent={currentContent}
 						setCurrentContent={setCurrentContent}
 					/>
-					{/* <Button
-						buttonAction={() =>
-							window.open('https://github.com/salvillalon45')
-						}
-					>
-						GitHub
-					</Button> */}
 				</div>
 
 				<div className='mt-6'>{showExperienceContent()}</div>
