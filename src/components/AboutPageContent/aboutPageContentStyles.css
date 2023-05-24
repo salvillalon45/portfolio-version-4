@@ -1,0 +1,21 @@
+@media only screen and (max-width: 600px) {
+	h2,
+	h3 {
+		text-align: center;
+	}
+}
+
+@media only screen and (max-width: 769px) {
+	.about-page-pic-wrapper div {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.about-page-pic-wrapper img {
+		width: 80%;
+	}
+
+	.about-page-pic-wrapper p {
+		text-align: center;
+	}
+}

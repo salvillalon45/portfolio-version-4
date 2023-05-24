@@ -1,14 +1,17 @@
 import React from 'react';
 import { Link, navigate } from 'gatsby';
+import NavigationBar from './NavigationBar';
 
 function Header() {
 	return (
-		<header className='flex justify-between'>
-			<p className='font-libre font-semibold text-xl'>
+		// <header className='flex justify-between'>
+		<header className=''>
+			<NavigationBar />
+			{/* <p className='font-libre font-semibold text-xl'>
 				Salvador Villalon Jr
-			</p>
+			</p> */}
 
-			<nav className='nav-bar'>
+			{/* <nav className='nav-bar'>
 				<ul className='flex list-none gap-4 font-poppins'>
 					<li>
 						<Link to='/'>Home</Link>
@@ -21,7 +24,7 @@ function Header() {
 						<Link to='/experience/'>Experience</Link>
 					</li>
 				</ul>
-			</nav>
+			</nav> */}
 		</header>
 	);
 }
