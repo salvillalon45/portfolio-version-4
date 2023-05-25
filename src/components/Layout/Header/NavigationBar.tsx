@@ -1,7 +1,9 @@
-import React, { Fragment } from 'react';
-import { Disclosure, Menu, Transition } from '@headlessui/react';
-import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline';
+import React from 'react';
+
 import { Link } from 'gatsby';
+
+import { Disclosure } from '@headlessui/react';
+import { Bars3Icon, XMarkIcon } from '@heroicons/react/24/outline';
 
 const navigation = [
 	{ name: 'Home', href: '/', current: true },
@@ -9,7 +11,7 @@ const navigation = [
 	{ name: 'Experience', href: '/experience/', current: false }
 ];
 
-function classNames(...classes) {
+function classNames(...classes: Array<string>) {
 	return classes.filter(Boolean).join(' ');
 }
 
@@ -56,16 +58,6 @@ export default function Example() {
 												key={item.name}
 												to={item.href}
 												activeClassName='bg-gray-700 text-white rounded-md font-medium px-3 py-2'
-												// activeStyle={{
-												// 	color: 'blue',
-												// 	fontWeight: 700
-												// }}
-												// className={classNames(
-												// 	item.current
-												// 		? 'bg-gray-900 text-white'
-												// 		: 'text-gray-300 hover:bg-gray-700 hover:text-white',
-												// 	'rounded-md px-3 py-2 text-sm font-medium'
-												// )}
 												aria-current={
 													item.current
 														? 'page'
@@ -87,12 +79,8 @@ export default function Example() {
 								<Link
 									key={item.name}
 									to={item.href}
-									className={classNames(
-										item.current
-											? 'bg-gray-900 text-white'
-											: 'text-gray-300 hover:bg-gray-700 hover:text-white',
-										'block rounded-md px-3 py-2 text-sm font-medium'
-									)}
+									activeClassName='bg-gray-700'
+									className='block rounded-md text-white px-3 py-2 text-sm font-medium'
 									aria-current={
 										item.current ? 'page' : undefined
 									}

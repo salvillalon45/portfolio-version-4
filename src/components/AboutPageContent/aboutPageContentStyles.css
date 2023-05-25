@@ -5,6 +5,13 @@
 	}
 }
 
+@media only screen and (max-width: 321px) {
+	h,
+	h3 {
+		text-align: center;
+	}
+}
+
 @media only screen and (max-width: 769px) {
 	.about-page-pic-wrapper div {
 		flex-direction: column;

@@ -4,3 +4,4 @@ public
 src/gatsby-types.d.ts
 db_notes.md
 .env.development
+.env.production
