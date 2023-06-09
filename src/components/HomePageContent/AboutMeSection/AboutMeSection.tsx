@@ -9,7 +9,7 @@ function AboutMeSection() {
 		<section
 			id='about-me-section'
 			arial-label='about-me'
-			className='flex justify-between items-center'
+			className='flex justify-between items-center flex-wrap lg:flex-nowrap'
 		>
 			<div className='w-3/6 grid gap-4'>
 				<Heading
@@ -18,10 +18,8 @@ function AboutMeSection() {
 				>
 					About Me
 				</Heading>
-				<Text>
-					Glad you made it to my site! This is the fourth version
-					(lol)
-				</Text>
+
+				<Text>Glad you made it to my site!</Text>
 				<Text>
 					My name is Salvador Villalon Jr. Alot of people call me Sal
 					(Feel free to call me that)

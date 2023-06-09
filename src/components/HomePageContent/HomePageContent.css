@@ -1,0 +1,11 @@
+@media only screen and (max-width: 768px) {
+	#about-me-section > div {
+		width: unset;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	#about-me-section > div {
+		/* width: 50%; */
+	}
+}
