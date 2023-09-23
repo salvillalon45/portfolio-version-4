@@ -2,7 +2,7 @@ import React from 'react';
 
 import Heading from '../../Reusable/Heading';
 import Text from '../../Reusable/Text';
-import Test from '../../../images/icon.png';
+import Profile from '../../../images/sal.jpg';
 
 function AboutMeSection() {
 	return (
@@ -18,12 +18,7 @@ function AboutMeSection() {
 				>
 					About Me
 				</Heading>
-
-				<Text>Glad you made it to my site!</Text>
-				<Text>
-					My name is Salvador Villalon Jr. Alot of people call me Sal
-					(Feel free to call me that)
-				</Text>
+				<Text>My name is Salvador Villalon Jr.</Text>
 				<Text>
 					At UC Irvine, I created my first WordPress (still used
 					today!). With just one website, I created so much impact
@@ -64,7 +59,7 @@ function AboutMeSection() {
 			</div>
 
 			<div className='about-image'>
-				<img className='h-80' src={Test} />
+				<img className='h-80' src={Profile} />
 			</div>
 		</section>
 	);

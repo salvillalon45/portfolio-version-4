@@ -14,7 +14,6 @@ const config: GatsbyConfig = {
 	graphqlTypegen: true,
 	plugins: [
 		'gatsby-plugin-postcss',
-		'gatsby-plugin-google-gtag',
 		'gatsby-plugin-image',
 		'gatsby-plugin-sitemap',
 		{
@@ -41,12 +40,6 @@ const config: GatsbyConfig = {
 				path: './src/pages/'
 			},
 			__key: 'pages'
-		},
-		{
-			resolve: `gatsby-source-instagram`,
-			options: {
-				username: process.env.USERNAMEID
-			}
 		}
 	]
 };

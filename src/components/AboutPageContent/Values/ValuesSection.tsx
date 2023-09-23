@@ -18,7 +18,6 @@ function ValuesSection() {
 			<DividerLine style='mb-12 mt-12' />
 
 			<CannotDoEverything />
-			<DividerLine style='mb-12 mt-12' />
 		</>
 	);
 }

@@ -9,7 +9,7 @@ function HomeHeroSection() {
 			<div className='flex justify-around items-center'>
 				<HomeHeroIntro />
 
-				{/* <HomeHeroImage /> */}
+				<HomeHeroImage />
 			</div>
 		</section>
 	);

@@ -13,30 +13,6 @@ type LayoutProps = {
 };
 
 function Layout({ children, id }: LayoutProps): React.ReactElement {
-	// let content = (
-	// 	<>
-	// 		{viewPort ? (
-	// 			<HorizontalSidebar pageId={id} />
-	// 		) : (
-	// 			<Sidebar pageId={id} />
-	// 		)}
-
-	// 		<MainStyled id={id}> {children} </MainStyled>
-	// 	</>
-	// );
-
-	// return viewPort ? (
-	// 	<MobileGridWrapper className={darkMode.value ? darkTheme : ''}>
-	// 		{content}
-	// 	</MobileGridWrapper>
-	// ) : (
-	// 	<>
-	// 		<GridWrapper className={darkMode.value ? darkTheme : ''}>
-	// 			{content}
-	// 		</GridWrapper>
-	// 	</>
-	// );
-
 	function showMainContent() {
 		let content = null;
 

@@ -6,7 +6,7 @@ import HomeHeroSection from './HomeHeroSection/HomeHeroSection';
 import ExploreSection from './ExploreSection/ExploreSection';
 import ContactSection from './ContactSection/ContactSection';
 
-import './HomePageContent.css';
+import './homePageContentStyles.css';
 
 function HomePageContent() {
 	return (

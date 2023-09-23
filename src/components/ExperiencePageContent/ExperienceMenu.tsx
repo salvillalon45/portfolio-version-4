@@ -1,175 +1,11 @@
-// import { Fragment } from 'react';
-// import { Popover, Transition } from '@headlessui/react';
-// import {
-// 	ChevronDownIcon,
-// 	PhoneIcon,
-// 	PlayCircleIcon
-// } from '@heroicons/react/20/solid';
-// import {
-// 	ArrowPathIcon,
-// 	ChartPieIcon,
-// 	CursorArrowRaysIcon,
-// 	FingerPrintIcon,
-// 	SquaresPlusIcon
-// } from '@heroicons/react/24/outline';
-// import React from 'react';
+import React, { Fragment } from 'react';
 
-// const solutions = [
-// 	{
-// 		name: 'Currently Doing',
-// 		description: 'Get a better understanding of your traffic',
-// 		href: '#',
-// 		icon: ChartPieIcon,
-// 		key: 'currently_doing'
-// 	},
-// 	{
-// 		name: 'Full - Time Experience',
-// 		description: 'Speak directly to your customers',
-// 		href: '#',
-// 		icon: CursorArrowRaysIcon,
-// 		key: 'full_time'
-// 	},
-// 	{
-// 		name: 'Internships',
-// 		description: "Your customers' data will be safe and secure",
-// 		href: '#',
-// 		icon: FingerPrintIcon,
-// 		key: 'internship'
-// 	},
-// 	{
-// 		name: 'Teaching',
-// 		description: 'Connect with third-party tools',
-// 		href: '#',
-// 		icon: SquaresPlusIcon,
-// 		key: 'teaching'
-// 	},
-// 	{
-// 		name: 'Education',
-// 		description: 'Build strategic funnels that will convert',
-// 		href: '#',
-// 		icon: ArrowPathIcon,
-// 		key: 'education'
-// 	}
-// ];
-// const callsToAction = [
-// 	{ name: 'Watch demo', href: '#', icon: PlayCircleIcon },
-// 	{ name: 'Contact sales', href: '#', icon: PhoneIcon }
-// ];
-
-// type ExperienceMenuProps = {
-// 	currentContent: string;
-// 	setCurrentContent: (string) => void;
-// };
-
-// export default function ExperienceMenu(props: ExperienceMenuProps) {
-// 	return (
-// 		<Popover className='block'>
-// 			<Popover.Button className='inline-flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900'>
-// 				<span>Explore My Experience</span>
-// 				<ChevronDownIcon className='h-5 w-5' aria-hidden='true' />
-// 			</Popover.Button>
-
-// 			<Transition
-// 				as={Fragment}
-// 				enter='transition ease-out duration-200'
-// 				enterFrom='opacity-0 '
-// 				enterTo='opacity-100 '
-// 				leave='transition ease-in duration-150'
-// 				leaveFrom='opacity-100'
-// 				leaveTo='opacity-0 '
-// 			>
-// 				<Popover.Panel className='left-1/2 z-10 mt-5 flex w-screen max-w-max px-4'>
-// 					<div className='w-screen max-w-md flex-auto overflow-hidden rounded-3xl bg-white text-sm leading-6 shadow-lg ring-1 ring-gray-900/5'>
-// 						<div className='p-4'>
-// 							{solutions.map((item) => (
-// 								<div
-// 									key={item.name}
-// 									className='group relative flex gap-x-6 rounded-lg p-4 hover:bg-gray-50'
-// 								>
-// 									<div className='mt-1 flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white'>
-// 										<item.icon
-// 											className='h-6 w-6 text-gray-600 group-hover:text-indigo-600'
-// 											aria-hidden='true'
-// 										/>
-// 									</div>
-// 									<div>
-// 										<Popover.Button>
-// 											<a
-// 												href={item.href}
-// 												className='font-semibold text-gray-900'
-// 												onClick={() =>
-// 													props.setCurrentContent(
-// 														item.key
-// 													)
-// 												}
-// 											>
-// 												{item.name}
-// 												<span className='absolute inset-0' />
-// 											</a>
-// 											<p className='mt-1 text-gray-600'>
-// 												{item.description}
-// 											</p>
-// 										</Popover.Button>
-// 									</div>
-// 								</div>
-// 							))}
-// 						</div>
-// 						<div className='grid grid-cols-2 divide-x divide-gray-900/5 bg-gray-50'>
-// 							{callsToAction.map((item) => (
-// 								<a
-// 									key={item.name}
-// 									href={item.href}
-// 									className='flex items-center justify-center gap-x-2.5 p-3 font-semibold text-gray-900 hover:bg-gray-100'
-// 								>
-// 									<item.icon
-// 										className='h-5 w-5 flex-none text-gray-400'
-// 										aria-hidden='true'
-// 									/>
-// 									{item.name}
-// 								</a>
-// 							))}
-// 						</div>
-// 					</div>
-// 				</Popover.Panel>
-// 			</Transition>
-// 		</Popover>
-// 	);
-// }
-import { Fragment, useState } from 'react';
 import { Listbox, Transition } from '@headlessui/react';
 import { CheckIcon, ChevronUpDownIcon } from '@heroicons/react/20/solid';
-import React from 'react';
-
-// const people = [
-// 	{
-// 		id: 1,
-// 		name: 'Currently Doing'
-// 	},
-// 	{
-// 		id: 2,
-// 		name: 'Full-Time Experience'
-// 	},
-// 	{
-// 		id: 3,
-// 		name: 'Internship Experience'
-// 	},
-// 	{
-// 		id: 4,
-// 		name: 'Teaching'
-// 	},
-// 	{
-// 		id: 5,
-// 		name: 'Education'
-// 	}
-// ];
-
-function classNames(...classes: any[]) {
-	return classes.filter(Boolean).join(' ');
-}
 
 type ExperienceMenuProps = {
 	currentContent: { name: string };
-	setCurrentContent: ({ name: string, key: string }) => void;
+	setCurrentContent: ({ name, key }: { name: string; key: string }) => void;
 };
 
 const people = [
@@ -180,10 +16,10 @@ const people = [
 	{ name: 'Education', key: 'education' }
 ];
 
-export default function ExperienceMenu(props: ExperienceMenuProps) {
-	const { currentContent, setCurrentContent } = props;
-	console.log(props.currentContent);
-
+export default function ExperienceMenu({
+	currentContent,
+	setCurrentContent
+}: ExperienceMenuProps) {
 	return (
 		<div className='top-16 w-48'>
 			<Listbox value={currentContent} onChange={setCurrentContent}>

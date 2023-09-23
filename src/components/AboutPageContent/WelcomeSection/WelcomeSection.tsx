@@ -35,10 +35,6 @@ function WelcomeSection() {
 						about me, but let's get into how I got to where I am
 						today!
 					</Text>
-					{/* <Text style='leading-10'>
-						This is a brief about me, but let's get into how I got
-						to where I am today!
-					</Text>  */}
 				</div>
 			</div>
 		</section>

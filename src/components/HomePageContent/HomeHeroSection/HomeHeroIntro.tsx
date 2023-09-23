@@ -1,8 +1,6 @@
 import React from 'react';
-import Button from '../../Reusable/Button';
 
 import Heading from '../../Reusable/Heading';
-import Text from '../../Reusable/Text';
 
 function HomeHeroIntro() {
 	return (
@@ -21,14 +19,6 @@ function HomeHeroIntro() {
 					Building for web and people
 				</Heading>
 			</div>
-
-			<Text style='w-3/5 text-center m-auto md:text-left md:m-0'>
-				I am a Software Engineer that build digial experiences with
-				optimism, collaboration, and a growth-mindset.
-			</Text>
-			{/* Currently I work
-			at Accenture where I listen to the pain points of organizations
-			and cooperate with my team to innovate solutions for clients. */}
 		</div>
 	);
 }
